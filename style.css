@@ -1,43 +1,58 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #6b6b6b;
+    background: url('images/lovget-bg.png') no-repeat center center fixed;
+    background-size: cover;
     color: white;
 }
 
+/* Затемнение, чтобы текст читался */
 .overlay {
-    background: rgba(0, 0, 0, 0.0);
     min-height: 100vh;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.55),
+        rgba(0, 0, 0, 0.65)
+    );
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
     padding: 40px 20px;
 }
 
-h1 {
-    font-size: 42px;
-    margin-bottom: 12px;
+/* Центральный блок */
+.content {
+    text-align: center;
+    max-width: 420px;
+    width: 100%;
 }
 
-p {
+h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.owner {
     font-size: 18px;
-    margin-bottom: 24px;
+    margin-bottom: 16px;
+    opacity: 0.9;
+}
+
+.instruction {
+    font-size: 15px;
+    margin-bottom: 28px;
+    opacity: 0.85;
+    line-height: 1.4;
 }
 
 .buttons {
     display: flex;
-    flex-direction: column;   /* ← ЖЁСТКО в столбец */
-    align-items: stretch;
-    gap: 12px;
-    width: 100%;
-    max-width: 420px;
+    flex-direction: column;
+    gap: 14px;
 }
 
 .btn {
-    display: block;           /* ← ВАЖНО */
-    width: 100%;              /* ← ВАЖНО */
+    display: block;
+    width: 100%;
     background-color: #ffd700;
     color: #000;
     padding: 16px;
@@ -53,8 +68,7 @@ p {
 }
 
 .note {
-    margin-top: 18px;
+    margin-top: 22px;
     font-size: 13px;
-    opacity: 0.75;
-    line-height: 1.4;
+    opacity: 0.7;
 }
