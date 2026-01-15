@@ -48,6 +48,7 @@ h1 {
     gap: 14px;
 }
 
+/* ОСНОВНЫЕ КНОПКИ */
 .btn {
     display: block;
     width: 100%;
@@ -66,13 +67,14 @@ h1 {
     transform: translateY(-1px);
 }
 
-/* Zoom — чуть спокойнее */
+/* ZOOM — СИНИЙ, ФИРМЕННЫЙ */
 .btn-zoom {
-    background-color: #f0d45a;
+    background-color: #2d8cff; /* Zoom blue */
+    color: #ffffff;
 }
 
 .btn-zoom:hover {
-    background-color: #e0c34f;
+    background-color: #1f76db;
 }
 
 .note {
