@@ -26,11 +26,11 @@ body {
 
 h1 {
     font-size: 38px;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
 }
 
 .owner {
-    font-size: 17px;
+    font-size: 16px;
     margin-bottom: 14px;
     opacity: 0.9;
 }
@@ -38,7 +38,7 @@ h1 {
 .instruction {
     font-size: 14.5px;
     margin-bottom: 26px;
-    opacity: 0.85;
+    opacity: 0.9;
     line-height: 1.45;
 }
 
@@ -67,9 +67,9 @@ h1 {
     transform: translateY(-1px);
 }
 
-/* ZOOM — СИНИЙ, ФИРМЕННЫЙ */
+/* ZOOM — СИНИЙ */
 .btn-zoom {
-    background-color: #2d8cff; /* Zoom blue */
+    background-color: #2d8cff;
     color: #ffffff;
 }
 
@@ -77,8 +77,22 @@ h1 {
     background-color: #1f76db;
 }
 
+/* FUNPAY — МИНИМАЛЬНО */
+.funpay-link {
+    margin-top: 16px;
+    font-size: 14px;
+    color: #9aa0a6;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.funpay-link:hover {
+    color: #ffffff;
+}
+
+/* НИЖНЯЯ ЗАМЕТКА */
 .note {
-    margin-top: 20px;
+    margin-top: 18px;
     font-size: 13px;
     opacity: 0.8;
 }
