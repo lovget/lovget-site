@@ -33,27 +33,27 @@ h1 {
 .owner {
     font-size: 15px;
     opacity: 0.9;
-    margin-bottom: 4px;
+    margin-bottom: 6px;
 }
 
-/* FUNPAY — компактный, тёмно-фиолетовый, премиум */
+/* FUNPAY — ЧУТЬ ШИРЕ, ЧЕМ "Владелец: Lovget" */
 .btn-funpay {
     display: inline-block;
-    padding: 6px 16px;
-    font-size: 13px;
+    padding: 8px 26px;          /* ← ВАЖНО: шире */
+    font-size: 14px;
     font-weight: 600;
-    border-radius: 8px;
+    border-radius: 9px;
     margin: 6px auto 14px auto;
     text-decoration: none;
 
-    background: rgba(160, 120, 255, 0.18);
-    color: #f0eaff;
+    background: rgba(150, 110, 255, 0.28);
+    color: #f4f0ff;
 
     backdrop-filter: blur(4px);
 }
 
 .btn-funpay:hover {
-    background: rgba(160, 120, 255, 0.26);
+    background: rgba(150, 110, 255, 0.38);
 }
 
 /* Инструкция */
