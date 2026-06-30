@@ -46,23 +46,8 @@ body {
     backdrop-filter: blur(10px);
 }
 
-.badge {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 7px 14px;
-    border: 1px solid var(--border);
-    border-radius: 999px;
-    background: var(--gold-soft);
-    color: #ffe766;
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-}
-
 h1 {
-    margin: 14px 0 8px;
+    margin: 0 0 8px;
     font-size: clamp(30px, 7vw, 40px);
     line-height: 1.05;
     text-shadow: 0 3px 18px rgba(0, 0, 0, 0.55);
@@ -98,26 +83,6 @@ h1 {
     opacity: 0.92;
     line-height: 1.45;
     margin: 0 0 16px;
-}
-
-.steps {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 8px;
-    margin-bottom: 16px;
-}
-
-.steps span {
-    min-height: 38px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 8px 6px;
-    border-radius: 12px;
-    background: rgba(255, 255, 255, 0.08);
-    color: rgba(255, 255, 255, 0.86);
-    font-size: 12px;
-    font-weight: 700;
 }
 
 .buttons {
@@ -177,9 +142,5 @@ h1 {
     .card {
         padding: 24px 14px 18px;
         border-radius: 20px;
-    }
-
-    .steps {
-        grid-template-columns: 1fr;
     }
 }
