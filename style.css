@@ -118,6 +118,26 @@ h1 {
     transform: translateY(-2px);
 }
 
+.btn-text {
+    display: inline-flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.btn-action {
+    color: rgba(0, 0, 0, 0.58);
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.btn-app {
+    color: #4f2700;
+    font-size: 15.5px;
+    font-weight: 900;
+}
+
 .btn-icon {
     display: inline-flex;
     align-items: center;
