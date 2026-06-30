@@ -92,18 +92,6 @@ h1 {
     background: #e6c200;
 }
 
-/* Zoom */
-.btn-zoom {
-    background: #2d8cff;
-    color: #fff;
-    padding: 13px;
-    font-size: 14.5px;
-}
-
-.btn-zoom:hover {
-    background: #1f76db;
-}
-
 /* Низ */
 .note {
     margin-top: 12px;
