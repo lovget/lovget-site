@@ -1,5 +1,18 @@
+:root {
+    --gold: #ffd700;
+    --gold-dark: #e6c200;
+    --gold-soft: rgba(255, 215, 0, 0.18);
+    --card: rgba(10, 10, 14, 0.58);
+    --border: rgba(255, 215, 0, 0.18);
+}
+
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
+    min-width: 320px;
     font-family: Arial, sans-serif;
     background: url('./images/lovget-bg.png') no-repeat center center fixed;
     background-size: cover;
@@ -8,63 +21,105 @@ body {
 
 .overlay {
     min-height: 100vh;
-    background: linear-gradient(
-        rgba(0,0,0,0.55),
-        rgba(0,0,0,0.75)
-    );
+    background:
+        radial-gradient(circle at center, rgba(255, 215, 0, 0.13), transparent 34%),
+        linear-gradient(rgba(0,0,0,0.48), rgba(0,0,0,0.78));
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 24px 16px;
+    padding: 28px 16px;
 }
 
 .content {
     text-align: center;
-    max-width: 360px;
+    max-width: 420px;
     width: 100%;
 }
 
-/* Заголовок */
+.card {
+    width: 100%;
+    padding: 28px 20px 22px;
+    border: 1px solid var(--border);
+    border-radius: 24px;
+    background: var(--card);
+    box-shadow: 0 22px 70px rgba(0, 0, 0, 0.52), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+}
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 14px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: var(--gold-soft);
+    color: #ffe766;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
 h1 {
-    font-size: 34px;
-    margin-bottom: 6px;
+    margin: 14px 0 8px;
+    font-size: clamp(30px, 7vw, 40px);
+    line-height: 1.05;
+    text-shadow: 0 3px 18px rgba(0, 0, 0, 0.55);
 }
 
 .owner {
     font-size: 15px;
-    opacity: 0.9;
-    margin-bottom: 6px;
+    opacity: 0.92;
+    margin: 0 0 10px;
 }
 
-/* FUNPAY — ЧУТЬ ШИРЕ, ЧЕМ "Владелец: Lovget" */
 .btn-funpay {
     display: inline-block;
-    padding: 8px 26px;          /* ← ВАЖНО: шире */
+    padding: 9px 28px;
     font-size: 14px;
-    font-weight: 600;
-    border-radius: 9px;
-    margin: 6px auto 14px auto;
+    font-weight: 700;
+    border-radius: 10px;
+    margin: 0 auto 18px;
     text-decoration: none;
-
-    background: rgba(150, 110, 255, 0.28);
-    color: #f4f0ff;
-
-    backdrop-filter: blur(4px);
+    background: linear-gradient(135deg, rgba(129, 86, 255, 0.9), rgba(92, 60, 154, 0.9));
+    color: #fff;
+    box-shadow: 0 10px 24px rgba(77, 48, 140, 0.28);
+    transition: transform 0.18s ease, filter 0.18s ease;
 }
 
 .btn-funpay:hover {
-    background: rgba(150, 110, 255, 0.38);
+    filter: brightness(1.08);
+    transform: translateY(-1px);
 }
 
-/* Инструкция */
 .instruction {
     font-size: 14px;
-    opacity: 0.9;
-    line-height: 1.4;
+    opacity: 0.92;
+    line-height: 1.45;
+    margin: 0 0 16px;
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
     margin-bottom: 16px;
 }
 
-/* Кнопки */
+.steps span {
+    min-height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 6px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.08);
+    color: rgba(255, 255, 255, 0.86);
+    font-size: 12px;
+    font-weight: 700;
+}
+
 .buttons {
     display: flex;
     flex-direction: column;
@@ -72,29 +127,59 @@ h1 {
 }
 
 .btn {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
     width: 100%;
+    min-height: 48px;
     text-decoration: none;
-    font-weight: bold;
-    border-radius: 10px;
-    box-sizing: border-box;
+    font-weight: 800;
+    border-radius: 13px;
+    transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
 }
 
-/* Основные кнопки */
 .btn-main {
-    background: #ffd700;
-    color: #000;
+    background: linear-gradient(180deg, #ffdf24, var(--gold));
+    color: #050505;
     padding: 13px;
     font-size: 14.5px;
+    box-shadow: 0 12px 28px rgba(255, 215, 0, 0.22);
 }
 
 .btn-main:hover {
-    background: #e6c200;
+    background: linear-gradient(180deg, #ffe557, var(--gold-dark));
+    box-shadow: 0 16px 34px rgba(255, 215, 0, 0.32);
+    transform: translateY(-2px);
 }
 
-/* Низ */
-.note {
-    margin-top: 12px;
+.btn-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.13);
     font-size: 12px;
-    opacity: 0.75;
+}
+
+.note {
+    margin-top: 14px;
+    padding: 10px 12px;
+    border-radius: 12px;
+    background: rgba(0, 0, 0, 0.22);
+    color: rgba(255, 255, 255, 0.78);
+    font-size: 12px;
+}
+
+@media (max-width: 420px) {
+    .card {
+        padding: 24px 14px 18px;
+        border-radius: 20px;
+    }
+
+    .steps {
+        grid-template-columns: 1fr;
+    }
 }
