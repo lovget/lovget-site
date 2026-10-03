@@ -32,7 +32,7 @@ body {
 
 .content {
     text-align: center;
-    max-width: 420px;
+    max-width: 780px;
     width: 100%;
 }
 
@@ -83,6 +83,35 @@ h1 {
     opacity: 0.92;
     line-height: 1.45;
     margin: 0 0 16px;
+}
+
+.app-groups {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    text-align: left;
+}
+
+.app-group {
+    padding: 16px;
+    border: 1px solid rgba(255, 215, 0, 0.14);
+    border-radius: 16px;
+    background: rgba(0, 0, 0, 0.18);
+}
+
+.app-group h2 {
+    margin: 0;
+    color: #ffdf24;
+    font-size: 16px;
+    line-height: 1.25;
+}
+
+.group-description {
+    min-height: 34px;
+    margin: 6px 0 12px;
+    color: rgba(255, 255, 255, 0.72);
+    font-size: 12px;
+    line-height: 1.4;
 }
 
 .buttons {
@@ -158,9 +187,17 @@ h1 {
     font-size: 12px;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 640px) {
     .card {
         padding: 24px 14px 18px;
         border-radius: 20px;
+    }
+
+    .app-groups {
+        grid-template-columns: 1fr;
+    }
+
+    .app-group {
+        padding: 14px;
     }
 }
