@@ -78,13 +78,6 @@ h1 {
     transform: translateY(-1px);
 }
 
-.instruction {
-    font-size: 14px;
-    opacity: 0.92;
-    line-height: 1.45;
-    margin: 0 0 16px;
-}
-
 .app-groups {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -100,18 +93,10 @@ h1 {
 }
 
 .app-group h2 {
-    margin: 0;
+    margin: 0 0 12px;
     color: #ffdf24;
     font-size: 16px;
     line-height: 1.25;
-}
-
-.group-description {
-    min-height: 34px;
-    margin: 6px 0 12px;
-    color: rgba(255, 255, 255, 0.72);
-    font-size: 12px;
-    line-height: 1.4;
 }
 
 .buttons {
