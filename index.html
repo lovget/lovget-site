@@ -20,40 +20,48 @@
                 Мой FunPay
             </a>
 
-            <p class="instruction">
-                Просто установите приложения.
-            </p>
+            <p class="instruction">Выберите способ получения приложения.</p>
 
-            <div class="buttons">
-                <a href="apps/NativeDetector.apk" class="btn btn-main" download>
-                    <span class="btn-icon">⬇</span>
-                    <span class="btn-text">
-                        <span class="btn-action">Скачать</span>
-                        <span class="btn-app">NativeDetector</span>
-                    </span>
-                </a>
+            <div class="app-groups">
+                <section class="app-group" aria-labelledby="browser-downloads-title">
+                    <h2 id="browser-downloads-title">Скачать в браузере</h2>
+                    <p class="group-description">Файл APK скачается на устройство.</p>
+                    <a href="apps/NativeDetector.apk" class="btn btn-main" download>
+                        <span class="btn-icon">⬇</span>
+                        <span class="btn-text">
+                            <span class="btn-action">Скачать APK</span>
+                            <span class="btn-app">NativeDetector</span>
+                        </span>
+                    </a>
+                </section>
 
-                <a href="https://play.google.com/store/apps/details?id=com.joeykrim.rootcheck&amp;hl=ru"
-                   class="btn btn-main"
-                   target="_blank"
-                   rel="noopener">
-                    <span class="btn-icon">⬇</span>
-                    <span class="btn-text">
-                        <span class="btn-action">Скачать</span>
-                        <span class="btn-app">Root Checker</span>
-                    </span>
-                </a>
+                <section class="app-group" aria-labelledby="google-play-title">
+                    <h2 id="google-play-title">Установить из Google Play</h2>
+                    <p class="group-description">Откроется страница приложения в Google Play.</p>
+                    <div class="buttons">
+                        <a href="https://play.google.com/store/apps/details?id=com.joeykrim.rootcheck&amp;hl=ru"
+                           class="btn btn-main"
+                           target="_blank"
+                           rel="noopener">
+                            <span class="btn-icon">▶</span>
+                            <span class="btn-text">
+                                <span class="btn-action">Открыть в Google Play</span>
+                                <span class="btn-app">Root Checker</span>
+                            </span>
+                        </a>
 
-                <a href="https://play.google.com/store/apps/details?id=at.persie0.root_detection_app"
-                   class="btn btn-main"
-                   target="_blank"
-                   rel="noopener">
-                    <span class="btn-icon">▶</span>
-                    <span class="btn-text">
-                        <span class="btn-action">Скачать</span>
-                        <span class="btn-app">Обнаружение Root</span>
-                    </span>
-                </a>
+                        <a href="https://play.google.com/store/apps/details?id=at.persie0.root_detection_app"
+                           class="btn btn-main"
+                           target="_blank"
+                           rel="noopener">
+                            <span class="btn-icon">▶</span>
+                            <span class="btn-text">
+                                <span class="btn-action">Открыть в Google Play</span>
+                                <span class="btn-app">Обнаружение Root</span>
+                            </span>
+                        </a>
+                    </div>
+                </section>
             </div>
 
             <div class="note">
@@ -62,3 +70,5 @@
         </div>
     </main>
 </div>
+</body>
+</html>
